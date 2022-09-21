@@ -1,0 +1,114 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+.main_members {
+	position: relative;
+	margin-top: 5vh;
+	width: 40%;
+	@media screen and (max-width: 1200px) {
+		width: 45%;
+	}
+	@media screen and (max-width: 992px) {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+	@media screen and (max-width: 768px) {
+		height: 50vh;
+	}
+	@media screen and (max-width: 512px) {
+		height: 60vh;
+	}
+	.parrot {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		@media screen and (max-width: 992px) {
+			width: 70%;
+		}
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+	.parrot_mobile {
+		display: none;
+		width: 100%;
+		@media screen and (max-width: 767px) {
+			display: block;
+			width: 283px;
+			height: 565px;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			transform: translateY(30%) translateX(15px);
+			pointer-events: none;
+			touch-action: none;
+		}
+	}
+	.card {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: rem(222);
+		height: rem(260);
+		@media screen and (max-width: 1200px) {
+			width: rem(200);
+			height: rem(240);
+		}
+		@media screen and (max-width: 992px) {
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			transform: translateY(-50%) translateX(-20%);
+		}
+		@media screen and (max-width: 767px) {
+			left: auto;
+			right: 0;
+			margin: 0 auto;
+			bottom: 0;
+			transform: translateY(30%) translateX(-50%);
+		}
+		.card_background {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			//height: 100%;
+			z-index: 0;
+		}
+		.card_description {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-between;
+			padding: rem(30) 0 rem(20) rem(30);
+			.card_top_icon {
+				width: rem(38);
+				z-index: 1;
+				img {
+					width: 100%;
+				}
+			}
+			.members_wrapper {
+				z-index: 1;
+				p {
+					font-weight: 700;
+					font-size: rem(16);
+					text-transform: capitalize;
+					color: #FFFFFF;
+					margin: 0 0 rem(8) 0;
+				}
+				span {
+					font-weight: 700;
+					font-size: rem(46);
+					color: #FFFFFF;
+				}
+			}
+		}
+	}
+}

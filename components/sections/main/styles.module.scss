@@ -1,0 +1,26 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.wrapper {
+  height: 100vh;
+  @media screen and (max-width: 992px) {
+    height: 100%;
+  }
+  .container {
+    @media screen and (max-width: 1200px) {
+      height: 100%;
+    }
+  }
+  .main_content {
+    padding-top: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 1200px) {
+      height: 100%;
+    }
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+}

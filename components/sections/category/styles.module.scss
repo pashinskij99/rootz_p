@@ -1,0 +1,13 @@
+@import "../../../styles/mixins";
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: rem(655);
+  background: #FFBD9E;
+  //@media screen and (max-width: 992px) {
+  //  height: 50vh;
+  //}
+}

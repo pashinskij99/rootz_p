@@ -1,0 +1,39 @@
+@import '../../styles/mixins.scss';
+
+.btn_anchor {
+	position: fixed;
+	bottom: rem(25);
+	right: rem(25);
+	width: rem(46);
+	height: rem(45);
+	padding: rem(10);
+	z-index: 100;
+	transition: 0.5s;
+	opacity: 0;
+	pointer-events: none;
+	touch-action: none;
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+	&.show {
+		opacity: 1;
+		pointer-events: all;
+		touch-action: auto;
+	}
+	&:hover {
+		background-color: #000;
+		.btn_anchor_icon {
+			background-color: #fff;
+		}
+	}
+	.btn_anchor_icon {
+		content: "";
+		display: block;
+		mask-image: url(../../assets/icons/arrow_top.svg);
+		mask-repeat: no-repeat;
+		background-color: #000;
+		height: 100%;
+		width: 100%;
+		transition: 0.5s;
+	}
+}

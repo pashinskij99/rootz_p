@@ -1,0 +1,15 @@
+@import "../../../styles/mixins";
+
+.wrapper {
+  background: #FFFFFF;
+  @media screen and (max-width: 767px) {
+    padding-top: rem(240) ;
+  }
+  .content {
+    @media screen and (max-width: 992px) {
+      p {
+        line-height: 22px!important;
+      }
+    }
+  }
+}

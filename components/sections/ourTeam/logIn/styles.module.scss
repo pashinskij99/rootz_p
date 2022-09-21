@@ -1,0 +1,40 @@
+@import "../../../../styles/mixins";
+
+.log_in {
+  margin-top: rem(50);
+  width: 100%;
+  background: #FFBD9E;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(104) rem(80);
+  @media screen and (max-width: 767px) {
+    margin-top: rem(100);
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    h2 {
+      text-transform: capitalize;
+      color: #222433;
+    }
+    p {
+      line-height: 32px;
+      color: #1E1A20;
+      margin-top: rem(40);
+    }
+  }
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    padding: rem(30) rem(35);
+    .description {
+      width: 100%;
+      margin-bottom: rem(40);
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding: rem(40) rem(20);
+  }
+}

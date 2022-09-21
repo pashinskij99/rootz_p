@@ -1,0 +1,76 @@
+@import "../../styles/mixins";
+
+.wrapper {
+  background-color: #F7F3F4;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: rem(100) 0;
+    .contacts {
+      @media screen and (max-width: 767px) {
+        width: 100%;     
+      }
+      h2 {
+        text-transform: uppercase;
+        color: #333333;
+        margin-bottom: rem(32);
+      }
+      span {
+        font-weight: 400;
+        font-size: rem(13);
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: #333333;
+      }
+    }
+    .headquarters {
+      
+      h4 {
+        line-height: 32px;
+        letter-spacing: 0.3px;
+        color: #333333;
+        margin-bottom: rem(37);
+      }
+      ul {
+        font-weight: 400;
+        font-size: rem(13);
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: #333333;
+      }
+    }
+    .social_media {
+      h4 {
+        line-height: 32px;
+        letter-spacing: 0.3px;
+        color: #333333;
+        margin-bottom: rem(37);
+      }
+      .social_list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+
+          a {
+            img {}
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap; 
+      .contacts,
+      .headquarters,
+      .social_media {
+        h2, h4 {
+          margin-bottom: rem(10);
+        }
+      }
+      .contacts {
+        margin-bottom: rem(30);
+      }       
+    }
+  }
+}

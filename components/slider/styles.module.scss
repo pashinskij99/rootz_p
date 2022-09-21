@@ -1,0 +1,23 @@
+@import "../../styles/mixins";
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+	padding: rem(180) 0 !important;
+  height: 100%;
+  @media screen and (max-width: 1200px) {
+    padding: rem(200) 0 !important;
+  }
+  @media screen and (max-width: 992px) {
+    padding: 20vh 0!important;
+  }
+  @media screen and (max-width: 767px) {
+    // padding: ;
+  }
+  @media screen and (max-width: 512px) {
+    padding: 30vh 0!important;
+  }
+}

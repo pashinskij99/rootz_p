@@ -1,0 +1,88 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+.main_description {
+	margin-top: 5vh;
+	width: 45%;
+	@media screen and (max-width: 992px) {
+		width: 100%;
+	}
+	@media screen and (max-width: 767px) {
+		margin-top: 0;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	p {
+		font-weight: 400;
+		font-size: rem(16);
+		line-height: 32px;
+		color: #000000;
+		@media screen and (max-width: 992px) {
+			font-size: rem(14);
+		}
+	}
+	.wrapper_input {
+		position: relative;
+		height: rem(65);
+		margin-top: rem(35);
+		display: flex;
+		align-items: center;
+		input {
+			width: 100%;
+			height: 100%;
+			border: none;
+			padding-left: rem(50);
+			padding-right: rem(140);
+			background: #FFFFFF;
+			box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
+			border-radius: 40px;
+			&::placeholder {
+				color: #807C7C;
+				font-size: rem(14);
+			}
+			@media screen and (max-width: 767px) {
+				padding-left: rem(50);
+				padding-right: rem(120);  
+			}
+		}
+		.btn_search {
+			position: absolute;
+			right: rem(8);
+			height: 80%;
+			padding: 0 rem(32);
+			background-color: #F2726C;
+			border-radius: 30px;
+			color: #FFFFFF;
+			font-weight: 700;
+			font-size: rem(13);
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			transition: 0.5s;
+			&:hover {
+				background-color: #000000;
+				color: #FFFFFF;
+			}
+			&:active {
+				background-color: #222433;
+			}
+			&:disabled {
+				background-color: #000000;
+				opacity: 0.2;
+				pointer-events: none;
+				touch-action: none;
+			}
+			@media screen and (max-width: 767px) {
+				padding: 0 rem(22);
+			}
+		}
+		.icon {
+			position: absolute;
+			left: 0;
+			top: rem(22);
+			left: rem(21);
+		}
+	}
+}
