@@ -10,6 +10,14 @@ import slide5_img from '../../../assets/img/slider/5.jpg'
 const Category = () => {
   const data = [
     [
+      'Avoid plastic',
+      'Taking on the issue of ensuring access to safe water requires worldwide effort.'
+    ],
+    [
+      'Choose organic',
+      'Taking on the issue of ensuring access to safe water requires worldwide effort.'
+    ],
+    [
       'Save watter',
       'Taking on the issue of ensuring access to safe water requires worldwide effort.'
     ],
@@ -19,14 +27,6 @@ const Category = () => {
     ],
     [
       'Save energy',
-      'Taking on the issue of ensuring access to safe water requires worldwide effort.'
-    ],
-    [
-      'Avoid plastic',
-      'Taking on the issue of ensuring access to safe water requires worldwide effort.'
-    ],
-    [
-      'Choose organic',
       'Taking on the issue of ensuring access to safe water requires worldwide effort.'
     ],
   ]

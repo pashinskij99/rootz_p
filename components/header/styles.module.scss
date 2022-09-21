@@ -99,11 +99,6 @@
 		}
 	}
 	.nav {
-		font-family: 'Poppins';
-		font-style: normal;
-		font-weight: 400;
-		font-size: rem(16);
-		color: #000000;
 		@media screen and (max-width: 767px) {
 			position: fixed;
 			height: 100vh;
@@ -130,6 +125,14 @@
 				margin-right: rem(100);
 				span {
 					display: block;
+					font-family: 'Poppins';
+					font-style: normal;
+					font-weight: 400;
+					font-size: rem(16);
+					color: #000000;
+					@media screen and (max-width: 767px) {
+						font-size: rem(28);
+					}
 				}
 				@media screen and (max-width: 1200px) {
 					margin-right: rem(70);
@@ -143,7 +146,9 @@
 				}
 				transition: all 0.3s ease;
 				&.active {
-					font-weight: 700;
+					span {
+						font-weight: 700;
+					}
 				}
 				&:last-child {
 					margin-right: 0;

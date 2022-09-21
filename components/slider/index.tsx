@@ -25,13 +25,14 @@ interface ISlider {
 const SliderComponent : React.FC<ISlider> = ({elements, images}) => {
   const [slidesPerView, setSlidesPerView] = useState<number>(3.5)
   const { width } = useWindowSize()
-
+  console.log('1');
+  
   useEffect(() => {
     if (width <= 1200 && width >= 992) setSlidesPerView(3)
-    if (width <= 992 && width >= 768) setSlidesPerView(2)
+    if (width <= 992 && width >= 768) setSlidesPerView(2.7)
     if (width < 768) setSlidesPerView(1.5)
     if (width > 1200) setSlidesPerView(3.5)
-  })
+  }, [width, slidesPerView])
 
   return (
     <div

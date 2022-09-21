@@ -7,7 +7,7 @@
   align-items: center;
   height: rem(655);
   background: #FFBD9E;
-  //@media screen and (max-width: 992px) {
-  //  height: 50vh;
-  //}
+  @media screen and (max-width: 768px) {
+    height: rem(555);
+  }
 }

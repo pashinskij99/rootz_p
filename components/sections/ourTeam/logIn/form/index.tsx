@@ -49,7 +49,7 @@ const useValidation = (value : string, validations : IValidations) => {
           break
       }
      }
-  }, [value])
+  })
 
   return {
     isEmpty,
