@@ -26,9 +26,9 @@
 }
 .modal_content {
   width: 50vw;
-  padding: rem(20);
+  // padding: rem(20);
   border-radius: 12px;
-  background-color: #FFFFFF;
+  // background-color: #FFFFFF;
   transform: scale(0.5);
   transition: 0.4s all;
   &.active {
