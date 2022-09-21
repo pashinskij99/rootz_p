@@ -25,7 +25,6 @@ interface ISlider {
 const SliderComponent : React.FC<ISlider> = ({elements, images}) => {
   const [slidesPerView, setSlidesPerView] = useState<number>(3.5)
   const { width } = useWindowSize()
-  console.log('1');
   
   useEffect(() => {
     if (width <= 1200 && width >= 992) setSlidesPerView(3)
@@ -51,7 +50,7 @@ const SliderComponent : React.FC<ISlider> = ({elements, images}) => {
           slideShadows: false,
         }}
         modules={[Navigation, Pagination, EffectCoverflow]}
-        spaceBetween={100}
+        spaceBetween={width <= 1200 ? 100 : 125}
         slidesPerView={slidesPerView}
         centeredSlides={true}
         loop
