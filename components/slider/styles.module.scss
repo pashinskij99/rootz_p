@@ -17,6 +17,12 @@
   @media screen and (max-width: 767px) {
   }
   @media screen and (max-width: 512px) {
-    padding: 30vh 0!important;
+    padding: rem(150) 0!important;
+  }
+  @media screen and (max-width: 400px) {
+    padding: rem(150) 0!important;
+  }
+  @media screen and (max-width: 350px) {
+    padding: rem(150) 0!important;
   }
 }

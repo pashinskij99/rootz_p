@@ -30,7 +30,9 @@ const SliderComponent : React.FC<ISlider> = ({elements, images}) => {
   useEffect(() => {
     if (width <= 1200 && width >= 992) setSlidesPerView(3)
     if (width <= 992 && width >= 768) setSlidesPerView(2.7)
-    if (width < 768) setSlidesPerView(1.5)
+    if (width < 768 && width > 400) setSlidesPerView(1.5)
+    if (width < 400 && width > 350) setSlidesPerView(1.4)
+    if (width < 350) setSlidesPerView(1.3)
     if (width > 1200) setSlidesPerView(3.5)
   }, [width, slidesPerView])
 

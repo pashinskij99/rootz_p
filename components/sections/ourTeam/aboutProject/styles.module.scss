@@ -9,6 +9,10 @@
     justify-content: center;
     flex-direction: column;
   }
+  @media screen and (max-width: 350px) {
+    margin-top: rem(80);
+    padding-bottom: rem(80);
+  }
   .contact_us {
     display: flex;
     flex-direction: column;
@@ -70,6 +74,14 @@
         height: rem(50);
         overflow: hidden;
         transition: all 0.5s;
+        @media screen and (max-width: 456px) {
+          &:first-child {
+            height: rem(80);
+          }
+        }
+        @media screen and (max-width: 375px) {
+          height: rem(80);
+        }
         &:first-child {
           margin-top: 0;
         }
@@ -91,6 +103,11 @@
               font-size: rem(18);
             }
             @media screen and (max-width: 767px) {
+            
+            }
+            @media screen and (max-width: 512px) {
+              width: 80%;
+              line-height: 30px;
             }
           }
           button {
